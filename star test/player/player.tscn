@@ -1,0 +1,75 @@
+[gd_scene load_steps=7 format=3 uid="uid://bjtmyww15nxvq"]
+
+[ext_resource type="Script" path="res://player/player.gd" id="1_bmfo8"]
+[ext_resource type="Texture2D" uid="uid://bole4svdf3gj8" path="res://images/playerStan_sprites/idle/character_maleAdventurer_idle0.png" id="2_2yc83"]
+[ext_resource type="Texture2D" uid="uid://cf1ac56bomr8t" path="res://images/playerStan_sprites/crouch/character_maleAdventurer_crouch0.png" id="2_b4vms"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pvxdj"]
+size = Vector2(32, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8ssov"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_b4vms")
+}],
+"loop": true,
+"name": &"crouch",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_2yc83")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x23wq"]
+size = Vector2(32, 20)
+
+[node name="player" type="CharacterBody2D" node_paths=PackedStringArray("animated_sprite")]
+collision_layer = 223
+collision_mask = 223
+script = ExtResource("1_bmfo8")
+min_jump_height = 64
+jump_duration = 0.2
+max_acceleration = 2500
+can_hold_jump = true
+animated_sprite = NodePath("icon")
+crouch_animation_name = "crouch"
+default_animation_name = "default"
+
+[node name="collistion" type="CollisionShape2D" parent="."]
+position = Vector2(0, -8)
+shape = SubResource("RectangleShape2D_pvxdj")
+
+[node name="icon" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -16)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_8ssov")
+frame_progress = 0.279351
+metadata/_edit_lock_ = true
+
+[node name="ShapeCast2D" type="ShapeCast2D" parent="."]
+position = Vector2(0, -3)
+shape = SubResource("RectangleShape2D_x23wq")
+target_position = Vector2(0, -16)
+collision_mask = 2
+
+[node name="Camera" type="Camera2D" parent="."]
+limit_left = 0
+limit_top = 64
+limit_bottom = 544
+position_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+drag_top_margin = 0.5
+editor_draw_limits = true
+editor_draw_drag_margin = true

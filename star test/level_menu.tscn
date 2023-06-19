@@ -1,0 +1,499 @@
+[gd_scene load_steps=4 format=3 uid="uid://cuxhfhraoesce"]
+
+[ext_resource type="Script" path="res://menus/level_menu.gd" id="1_7ujom"]
+[ext_resource type="PackedScene" uid="uid://h5xw71rapoym" path="res://MISC/data_handler.tscn" id="2_0818p"]
+[ext_resource type="PackedScene" uid="uid://bunuqsfvwd7j7" path="res://MISC/looping_background.tscn" id="3_k3xgl"]
+
+[node name="menu test" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7ujom")
+
+[node name="data_handler" parent="." instance=ExtResource("2_0818p")]
+
+[node name="looping_background" parent="." instance=ExtResource("3_k3xgl")]
+
+[node name="world1_1" type="Control" parent="." groups=["button"]]
+layout_mode = 1
+anchor_right = 0.043
+anchor_bottom = 0.076
+offset_right = -0.536003
+offset_bottom = -0.248005
+mouse_default_cursor_shape = 1
+
+[node name="Button" type="TextureButton" parent="world1_1"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="world1_1"]
+centered = false
+offset = Vector2(11, 3)
+metadata/_edit_lock_ = true
+
+[node name="world1_2" type="Control" parent="." groups=["button"]]
+layout_mode = 1
+anchor_right = 0.043
+anchor_bottom = 0.076
+offset_right = -0.536003
+offset_bottom = -0.248005
+mouse_default_cursor_shape = 1
+
+[node name="Button" type="TextureButton" parent="world1_2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="world1_2"]
+centered = false
+offset = Vector2(11, 3)
+metadata/_edit_lock_ = true
+
+[node name="world1_3" type="Control" parent="." groups=["button"]]
+layout_mode = 1
+anchor_right = 0.043
+anchor_bottom = 0.076
+offset_right = -0.536003
+offset_bottom = -0.248005
+mouse_default_cursor_shape = 1
+
+[node name="Button" type="TextureButton" parent="world1_3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="world1_3"]
+centered = false
+offset = Vector2(11, 3)
+metadata/_edit_lock_ = true
+
+[node name="world1_4" type="Control" parent="." groups=["button"]]
+layout_mode = 1
+anchor_right = 0.043
+anchor_bottom = 0.076
+offset_right = -0.536003
+offset_bottom = -0.248005
+mouse_default_cursor_shape = 1
+
+[node name="Button" type="TextureButton" parent="world1_4"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="world1_4"]
+centered = false
+offset = Vector2(11, 3)
+metadata/_edit_lock_ = true
+
+[node name="world2_1" type="Control" parent="." groups=["button"]]
+layout_mode = 1
+anchor_right = 0.043
+anchor_bottom = 0.076
+offset_right = -0.536003
+offset_bottom = -0.248005
+mouse_default_cursor_shape = 1
+
+[node name="Button" type="TextureButton" parent="world2_1"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="world2_1"]
+centered = false
+offset = Vector2(11, 3)
+metadata/_edit_lock_ = true
+
+[node name="world2_2" type="Control" parent="." groups=["button"]]
+layout_mode = 1
+anchor_right = 0.043
+anchor_bottom = 0.076
+offset_right = -0.536003
+offset_bottom = -0.248005
+mouse_default_cursor_shape = 1
+
+[node name="Button" type="TextureButton" parent="world2_2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="world2_2"]
+centered = false
+offset = Vector2(11, 3)
+metadata/_edit_lock_ = true
+
+[node name="world2_3" type="Control" parent="." groups=["button"]]
+layout_mode = 1
+anchor_right = 0.043
+anchor_bottom = 0.076
+offset_right = -0.536003
+offset_bottom = -0.248005
+mouse_default_cursor_shape = 1
+
+[node name="Button" type="TextureButton" parent="world2_3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="world2_3"]
+centered = false
+offset = Vector2(11, 3)
+metadata/_edit_lock_ = true
+
+[node name="world2_4" type="Control" parent="." groups=["button"]]
+layout_mode = 1
+anchor_right = 0.043
+anchor_bottom = 0.076
+offset_right = -0.536003
+offset_bottom = -0.248005
+mouse_default_cursor_shape = 1
+
+[node name="Button" type="TextureButton" parent="world2_4"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="world2_4"]
+centered = false
+offset = Vector2(11, 3)
+metadata/_edit_lock_ = true
+
+[node name="world3_1" type="Control" parent="." groups=["button"]]
+layout_mode = 1
+anchor_right = 0.043
+anchor_bottom = 0.076
+offset_right = -0.536003
+offset_bottom = -0.248005
+mouse_default_cursor_shape = 1
+
+[node name="Button" type="TextureButton" parent="world3_1"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="world3_1"]
+centered = false
+offset = Vector2(11, 3)
+metadata/_edit_lock_ = true
+
+[node name="world3_2" type="Control" parent="." groups=["button"]]
+layout_mode = 1
+anchor_right = 0.043
+anchor_bottom = 0.076
+offset_right = -0.536003
+offset_bottom = -0.248005
+mouse_default_cursor_shape = 1
+
+[node name="Button" type="TextureButton" parent="world3_2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="world3_2"]
+centered = false
+offset = Vector2(11, 3)
+metadata/_edit_lock_ = true
+
+[node name="world3_3" type="Control" parent="." groups=["button"]]
+layout_mode = 1
+anchor_right = 0.043
+anchor_bottom = 0.076
+offset_right = -0.536003
+offset_bottom = -0.248005
+mouse_default_cursor_shape = 1
+
+[node name="Button" type="TextureButton" parent="world3_3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="world3_3"]
+centered = false
+offset = Vector2(11, 3)
+metadata/_edit_lock_ = true
+
+[node name="world3_4" type="Control" parent="." groups=["button"]]
+layout_mode = 1
+anchor_right = 0.043
+anchor_bottom = 0.076
+offset_right = -0.536003
+offset_bottom = -0.248005
+mouse_default_cursor_shape = 1
+
+[node name="Button" type="TextureButton" parent="world3_4"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="world3_4"]
+centered = false
+offset = Vector2(11, 3)
+metadata/_edit_lock_ = true
+
+[node name="world4_1" type="Control" parent="." groups=["button"]]
+layout_mode = 1
+anchor_right = 0.043
+anchor_bottom = 0.076
+offset_right = -0.536003
+offset_bottom = -0.248005
+mouse_default_cursor_shape = 1
+
+[node name="Button" type="TextureButton" parent="world4_1"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="world4_1"]
+centered = false
+offset = Vector2(11, 3)
+metadata/_edit_lock_ = true
+
+[node name="world4_2" type="Control" parent="." groups=["button"]]
+layout_mode = 1
+anchor_right = 0.043
+anchor_bottom = 0.076
+offset_right = -0.536003
+offset_bottom = -0.248005
+mouse_default_cursor_shape = 1
+
+[node name="Button" type="TextureButton" parent="world4_2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="world4_2"]
+centered = false
+offset = Vector2(11, 3)
+metadata/_edit_lock_ = true
+
+[node name="world4_3" type="Control" parent="." groups=["button"]]
+layout_mode = 1
+anchor_right = 0.043
+anchor_bottom = 0.076
+offset_right = -0.536003
+offset_bottom = -0.248005
+mouse_default_cursor_shape = 1
+
+[node name="Button" type="TextureButton" parent="world4_3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="world4_3"]
+centered = false
+offset = Vector2(11, 3)
+metadata/_edit_lock_ = true
+
+[node name="world4_4" type="Control" parent="." groups=["button"]]
+layout_mode = 1
+anchor_right = 0.043
+anchor_bottom = 0.076
+offset_right = -0.536003
+offset_bottom = -0.248005
+mouse_default_cursor_shape = 1
+
+[node name="Button" type="TextureButton" parent="world4_4"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="world4_4"]
+centered = false
+offset = Vector2(11, 3)
+metadata/_edit_lock_ = true
+
+[node name="world5_1" type="Control" parent="." groups=["button"]]
+layout_mode = 1
+anchor_right = 0.043
+anchor_bottom = 0.076
+offset_right = -0.536003
+offset_bottom = -0.248005
+mouse_default_cursor_shape = 1
+
+[node name="Button" type="TextureButton" parent="world5_1"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="world5_1"]
+centered = false
+offset = Vector2(11, 3)
+metadata/_edit_lock_ = true
+
+[node name="world5_2" type="Control" parent="." groups=["button"]]
+layout_mode = 1
+anchor_right = 0.043
+anchor_bottom = 0.076
+offset_right = -0.536003
+offset_bottom = -0.248005
+mouse_default_cursor_shape = 1
+
+[node name="Button" type="TextureButton" parent="world5_2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="world5_2"]
+centered = false
+offset = Vector2(11, 3)
+metadata/_edit_lock_ = true
+
+[node name="world5_3" type="Control" parent="." groups=["button"]]
+layout_mode = 1
+anchor_right = 0.043
+anchor_bottom = 0.076
+offset_right = -0.536003
+offset_bottom = -0.248005
+mouse_default_cursor_shape = 1
+
+[node name="Button" type="TextureButton" parent="world5_3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="world5_3"]
+centered = false
+offset = Vector2(11, 3)
+metadata/_edit_lock_ = true
+
+[node name="world5_4" type="Control" parent="." groups=["button"]]
+layout_mode = 1
+anchor_right = 0.043
+anchor_bottom = 0.076
+offset_right = -0.536003
+offset_bottom = -0.248005
+mouse_default_cursor_shape = 1
+
+[node name="Button" type="TextureButton" parent="world5_4"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="world5_4"]
+centered = false
+offset = Vector2(11, 3)
+metadata/_edit_lock_ = true
+
+[node name="world6_1" type="Control" parent="." groups=["button"]]
+layout_mode = 1
+anchor_right = 0.043
+anchor_bottom = 0.076
+offset_right = -0.536003
+offset_bottom = -0.248005
+mouse_default_cursor_shape = 1
+
+[node name="Button" type="TextureButton" parent="world6_1"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="world6_1"]
+centered = false
+offset = Vector2(11, 3)
+metadata/_edit_lock_ = true
+
+[node name="world6_2" type="Control" parent="." groups=["button"]]
+layout_mode = 1
+anchor_right = 0.043
+anchor_bottom = 0.076
+offset_right = -0.536003
+offset_bottom = -0.248005
+mouse_default_cursor_shape = 1
+
+[node name="Button" type="TextureButton" parent="world6_2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="world6_2"]
+centered = false
+offset = Vector2(11, 3)
+metadata/_edit_lock_ = true
+
+[node name="world6_3" type="Control" parent="." groups=["button"]]
+layout_mode = 1
+anchor_right = 0.043
+anchor_bottom = 0.076
+offset_right = -0.536003
+offset_bottom = -0.248005
+mouse_default_cursor_shape = 1
+
+[node name="Button" type="TextureButton" parent="world6_3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="world6_3"]
+centered = false
+offset = Vector2(11, 3)
+metadata/_edit_lock_ = true
+
+[node name="world6_4" type="Control" parent="." groups=["button"]]
+layout_mode = 1
+anchor_right = 0.043
+anchor_bottom = 0.076
+offset_right = -0.536003
+offset_bottom = -0.248005
+mouse_default_cursor_shape = 1
+
+[node name="Button" type="TextureButton" parent="world6_4"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="world6_4"]
+centered = false
+offset = Vector2(11, 3)
+metadata/_edit_lock_ = true
+
+[connection signal="pressed" from="world1_1/Button" to="." method="_on_button_pressed" binds= ["1_1"]]
+[connection signal="pressed" from="world1_2/Button" to="." method="_on_button_pressed" binds= ["1_2"]]
+[connection signal="pressed" from="world1_3/Button" to="." method="_on_button_pressed" binds= ["1_3"]]
+[connection signal="pressed" from="world1_4/Button" to="." method="_on_button_pressed" binds= ["1_4"]]
+[connection signal="pressed" from="world2_1/Button" to="." method="_on_button_pressed" binds= ["2_1"]]
+[connection signal="pressed" from="world2_2/Button" to="." method="_on_button_pressed" binds= ["2_2"]]
+[connection signal="pressed" from="world2_3/Button" to="." method="_on_button_pressed" binds= ["2_3"]]
+[connection signal="pressed" from="world2_4/Button" to="." method="_on_button_pressed" binds= ["2_4"]]
+[connection signal="pressed" from="world3_1/Button" to="." method="_on_button_pressed" binds= ["3_1"]]
+[connection signal="pressed" from="world3_2/Button" to="." method="_on_button_pressed" binds= ["3_2"]]
+[connection signal="pressed" from="world3_3/Button" to="." method="_on_button_pressed" binds= ["3_3"]]
+[connection signal="pressed" from="world3_4/Button" to="." method="_on_button_pressed" binds= ["3_4"]]
+[connection signal="pressed" from="world4_1/Button" to="." method="_on_button_pressed" binds= ["4_1"]]
+[connection signal="pressed" from="world4_2/Button" to="." method="_on_button_pressed" binds= ["4_2"]]
+[connection signal="pressed" from="world4_3/Button" to="." method="_on_button_pressed" binds= ["4_3"]]
+[connection signal="pressed" from="world4_4/Button" to="." method="_on_button_pressed" binds= ["4_4"]]
+[connection signal="pressed" from="world5_1/Button" to="." method="_on_button_pressed" binds= ["5_1"]]
+[connection signal="pressed" from="world5_2/Button" to="." method="_on_button_pressed" binds= ["5_2"]]
+[connection signal="pressed" from="world5_3/Button" to="." method="_on_button_pressed" binds= ["5_3"]]
+[connection signal="pressed" from="world5_4/Button" to="." method="_on_button_pressed" binds= ["5_4"]]
+[connection signal="pressed" from="world6_1/Button" to="." method="_on_button_pressed" binds= ["6_1"]]
+[connection signal="pressed" from="world6_2/Button" to="." method="_on_button_pressed" binds= ["6_2"]]
+[connection signal="pressed" from="world6_3/Button" to="." method="_on_button_pressed" binds= ["6_3"]]
+[connection signal="pressed" from="world6_4/Button" to="." method="_on_button_pressed" binds= ["6_4"]]

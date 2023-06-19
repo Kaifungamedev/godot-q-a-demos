@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://bdm56mcgfo7x7"]
+
+[ext_resource type="Texture2D" uid="uid://dwhebs35uod8" path="res://images/objects/switchMid.png" id="1_v28su"]
+[ext_resource type="Texture2D" uid="uid://do4xf5r0xtw0l" path="res://images/objects/switchLeft.png" id="2_lvilj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5voil"]
+size = Vector2(0, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1pxt6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_v28su")
+}],
+"loop": true,
+"name": &"off",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_lvilj")
+}],
+"loop": true,
+"name": &"on",
+"speed": 5.0
+}]
+
+[node name="end_switch" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_5voil")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -1)
+sprite_frames = SubResource("SpriteFrames_1pxt6")
+animation = &"off"
+metadata/_edit_lock_ = true

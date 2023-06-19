@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://b841elhq7mgb6"]
+
+[ext_resource type="Texture2D" uid="uid://iqb1dyryyoye" path="res://images/objects/star.png" id="1_73ypj"]
+[ext_resource type="Script" path="res://items/star.gd" id="1_hf6fv"]
+
+[node name="star" type="RigidBody2D"]
+collision_layer = 32
+collision_mask = 34
+script = ExtResource("1_hf6fv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.457, 0.457)
+texture = ExtResource("1_73ypj")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-4.94625, 7.332, 0, 6, 4.59391, 7.28973, 4.7514, 2.25005, 7.263, -1.38116, 3.0715, -2.84213, 0.0266914, -7.25186, -2.59814, -3.15711, -7.18942, -1.75574, -4.75051, 2.46003)
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="tree_exiting" from="." to="." method="_on_tree_exiting"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_screen_exited"]
